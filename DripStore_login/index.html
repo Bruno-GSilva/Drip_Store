@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drip Store - Login</title>
-    <link rel="stylesheet" href="resources/styles/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="resources/styles/index.css" />
+  </head>
+  <body>
     <header>
-        <div class="header_logo">
-            <span class="image_logo">
-                <img src="resources/images/Vector.svg" alt="logo digital Store">
-            </span>
-            <span class="titulo_digital">
-                <h3>Digital Store</h3>
-            </span>
-        </div>
+      <div class="header_logo">
+        <span class="image_logo">
+          <img src="resources/images/Vector.svg" alt="logo digital Store" />
+        </span>
+        <span class="titulo_digital">
+          <h3>Digital Store</h3>
+        </span>
+      </div>
     </header>
-</body>
+    <main>
+      <div class="container_login">
+        <div class="form_login">
+          <h3>Acesse sua conta</h3>
+          <span>Novo cliente? Entao registre-se <a href="#">aqui</a>.</span>
+        </div>
+        <form>
+          <!-- login -->
+          <label for="login">Login *</label>
+          <input
+            type="text"
+            id="login"
+            name="login"
+            placeholder="insira seu login ou email"
+          />
+          <!-- senha -->
+          <label for="password">Senha *</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="insira sua senha"
+          />
+          <span class="text_password"><a href="#">Esqueci minha senha</a></span>
+          <!-- botao -->
+          <input type="submit" value="Acessar Conta" id="btn"/>
+        </form>
+        <div class="form_links">
+                <p>Ou faça login com</p>
+                <span>
+                </span>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

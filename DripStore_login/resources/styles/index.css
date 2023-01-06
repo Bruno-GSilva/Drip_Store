@@ -12,7 +12,7 @@ header{
     align-items: center;
     padding: 25px 100px;
     background-color: rgba(255,255,255,1);
-    transition: .5;
+    transition: .5s;
 }
 header > div{
     display: flex;
@@ -34,4 +34,90 @@ header > div > span:last-child h3{
         justify-content: center;
         padding: 25px;
     }
+    .container_login{
+        width: 315px;
+    }
+    form {
+        width: 100%;
+      }  
 }
+
+/* formulario de login */
+main{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main > div{
+    width: 583px;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 4px;
+    background-color: rgba(255,255,255,1);
+    transition: .5s;
+}
+main > div .form_login{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    gap: 30px;
+}
+main > div .form_login h3{
+    font-weight: 700;
+    font-size: 32px;
+}
+main > div .form_login span a{
+    text-decoration: underline;
+}
+main > div .form_links{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    padding: 0px;
+}
+main > div .form_links p{
+    font-size: 16px;
+    font-weight: 400;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    bottom: 40px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    gap: 5px;
+  }
+  label {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px;
+  }
+  main form .text_password{
+    text-decoration: underline;
+    padding: 30px 0;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    background: #47474740;
+    border: none;
+    border-radius: 8px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color:#C92071;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }

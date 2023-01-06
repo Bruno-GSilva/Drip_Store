@@ -1,3 +1,37 @@
+/* reset de pagina */
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: gray;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 100px;
+    background-color: rgba(255,255,255,1);
+    transition: .5;
+}
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > div > span:first-child{
+    display: flex;
+    padding-right: 5px;
+}
+header > div > span:last-child h3{
+    color: #C92071;
+    font-weight: 600;
+}
+
+/* responsivo */
+@media (max-width: 480px){
+    header{
+        justify-content: center;
+        padding: 25px;
+    }
+}

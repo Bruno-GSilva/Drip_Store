@@ -1,123 +1,230 @@
 /* reset de pagina */
 @import url(reset.css);
 
-body{
-    min-height: 100vh;
-    width: 100vw;
-    background-color: gray;
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #b5b6f2 0%, #efefff 100%);
 }
-header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 25px 100px;
-    background-color: rgba(255,255,255,1);
-    transition: .5s;
+main > .images {
+  display: flex;
+  position: relative;
+  left: 20px;
+  transition: .5s;
 }
-header > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main > .images span:first-child {
+  position: relative;
+  top: -55px;
 }
-header > div > span:first-child{
-    display: flex;
-    padding-right: 5px;
+main > .images span:last-child {
+  position: relative;
+  top: 118px;
+  right: 115px;
 }
-header > div > span:last-child h3{
-    color: #C92071;
-    font-weight: 600;
+/* header*/
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px 100px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.5s;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > div > span:first-child {
+  display: flex;
+  padding-right: 5px;
+}
+header > div > span:last-child h3 {
+  color: #c92071;
+  font-weight: 600;
+}
+/* formulario de login */
+main {
+  padding: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  bottom: 40px;
+  margin: 0 auto;
+  padding: 30px 30px;
+  gap: 5px;
+}
+label {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px;
+}
+main > .container_login {
+  width: 583px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.5s;
+}
+main > div .form_login {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  gap: 30px;
+}
+main > div .form_login h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+main > div .form_login span a {
+  text-decoration: underline;
+}
+
+main > div .form_links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  padding: 0px;
+}
+main > div .form_links p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 15px;
+}
+main > div .form_links > span {
+  display: flex;
+  padding: 10px;
+  gap: 15px;
+}
+main form .text_password {
+  text-decoration: underline;
+  padding: 30px 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  background: #47474740;
+  border: none;
+  border-radius: 8px;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: #c92071;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/* footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding: 30px;
+}
+footer > div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+footer > div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* section01 */
+footer > div > :nth-child(1){
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer > div > :nth-child(1) div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+footer > div > :nth-child(1) div > h3{
+  font-size: 36px;
+  font-weight: 600;
+}
+footer > div > :nth-child(1) p {
+  max-width: 210px;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer > div > :nth-child(1) span{
+  display: flex;
+  gap: 25px;
+}
+/* section02 */
+footer > div > :nth-child(2){
+
+}
+footer > div > :nth-child(2) > ul{
+
+}
+
+/* section03 */
+footer > div > :nth-child(3){
+  
+}
+/* section04 */
+footer > div > :nth-child(4){
+  
+}
+footer> p{
+
 }
 
 /* responsivo */
-@media (max-width: 480px){
-    header{
-        justify-content: center;
-        padding: 25px;
-    }
-    .container_login{
-        width: 315px;
-    }
-    form {
-        width: 100%;
-      }  
-}
-
-/* formulario de login */
-main{
-    padding: 30px;
-    display: flex;
-    align-items: center;
+@media (max-width: 480px) {
+  main{
+    padding: auto 30px auto 30px;
+  }
+  header {
     justify-content: center;
-}
-main > div{
-    width: 583px;
-    display: flex;
-    flex-direction: column; 
-    border-radius: 4px;
-    background-color: rgba(255,255,255,1);
-    transition: .5s;
-}
-main > div .form_login{
-    display: flex;
+    padding: 25px;
+  }
+  main > .images{
+    display: none;
+  }
+  .container_login {
+    width: 315px;
+  }
+  main > div .form_links {
     flex-direction: column;
-    padding: 30px 30px;
+  }
+  main > div .form_login h3 {
+    font-size: 22px;
+  }
+  form {
+    width: 100%;
+  }
+  footer > div{
+    flex-direction: column;
     gap: 30px;
+  }
 }
-main > div .form_login h3{
-    font-weight: 700;
-    font-size: 32px;
-}
-main > div .form_login span a{
-    text-decoration: underline;
-}
-main > div .form_links{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 40px;
-    padding: 0px;
-}
-main > div .form_links p{
-    font-size: 16px;
-    font-weight: 400;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    bottom: 40px;
-    margin: 0 auto;
-    padding: 30px 30px;
-    gap: 5px;
-  }
-  label {
-    margin-top: 12px;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 5px;
-  }
-  main form .text_password{
-    text-decoration: underline;
-    padding: 30px 0;
-  }
-  input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 12px 20px;
-    background: #47474740;
-    border: none;
-    border-radius: 8px;
-  }
-  input[type="submit"] {
-    width: 100%;
-    background-color:#C92071;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }

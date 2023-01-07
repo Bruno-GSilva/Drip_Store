@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            width: 100px;
+            aspect-ratio: 1;
+            border-radius: 0px;
+            font-size: 16px;
+            border: 1px solid black;
+        }
+        div:hover{
+            box-shadow: 0 0 10px;
+            width: 110px;
+        }
+        div:not(:hover){
+            opacity: .4;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn"><a href="DripStore_login/index.html">Login</a></div>
+    <div class="btn"></div>
+    <div class="btn"></div>
+    <div class="btn"></div>
+</body>
+</html>

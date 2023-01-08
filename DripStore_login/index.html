@@ -18,13 +18,14 @@
         </span>
       </div>
     </header>
+    
     <main>
       <div class="container_login">
         <div class="form_login">
           <h3>Acesse sua conta</h3>
           <span>Novo cliente? Entao registre-se <a href="#">aqui</a>.</span>
         </div>
-        <form>
+        <form id="form1">
           <!-- login -->
           <label for="login">Login *</label>
           <input
@@ -33,7 +34,7 @@
             name="login"
             placeholder="insira seu login ou email"
           />
-          <!-- senha -->
+          <!-- password -->
           <label for="password">Senha *</label>
           <input
             type="password"
@@ -42,8 +43,8 @@
             placeholder="insira sua senha"
           />
           <span class="text_password"><a href="#">Esqueci minha senha</a></span>
-          <!-- botao -->
-          <input type="submit" value="Acessar Conta" id="btn" />
+          <!-- button -->
+          <input type="submit" value="Enviar" id="btn" />
         </form>
         <div class="form_links">
           <p>Ou faça login com</p>
@@ -56,55 +57,66 @@
         </div>
       </div>
       <div class="images">
-        <span><img src="resources/images/shoes01.png"></span>
-        <span><img src="resources/images/shoes02.png"></span>
+        <span><img src="resources/images/shoes01.png" /></span>
+        <span><img src="resources/images/shoes02.png" /></span>
       </div>
     </main>
+
     <footer>
-      <div class="container_footer">
-        <div class="section1">
-          <div>
+      <div class="footer">
+        <section id="section1">
+          <div id="logo-digitalStore">
             <span><img src="resources/images/DC_white.svg" alt="" /></span>
-            <h3>Digital Store</h3>
+            <span><h3>Digital Store</h3></span>
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore.
           </p>
-          <span class="icons">
+          <span id="icons">
             <a href="#"><img src="resources/images/face_white.png" alt="" /></a>
             <a href="#"><img src="resources/images/Insta.svg" alt="" /></a>
             <a href="#"><img src="resources/images/Tweet.svg" alt="" /></a>
           </span>
-        </div>
-        <div class="section2">
-          <h3>Informações</h3>
-          <ul>
-            <li><a href="#">Sobre Drip Store</a></li>
-            <li><a href="#">Segurança</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Trabalhe conosco</a></li>
-            <li><a href="#">Meus Pedidos</a></li>
-          </ul>
-        </div>
-        <div class="section3">
-          <h3>Categorias</h3>
-          <ul>
-            <li><a href="#">Camisetas</a></li>
-            <li><a href="#">Calças</a></li>
-            <li><a href="#">Bonés</a></li>
-            <li><a href="#">Headphones</a></li>
-            <li><a href="#">Tênis</a></li>
-          </ul>
-        </div>
-        <div class="section4">
+        </section>
+        <section id="section2">
+          <div class="info">
+            <h3>Informações</h3>
+            <ul>
+              <li><a href="#">Sobre Drip Store</a></li>
+              <li><a href="#">Segurança</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Trabalhe conosco</a></li>
+              <li><a href="#">Meus Pedidos</a></li>
+            </ul>
+          </div>
+          <div class="categorias">
+            <h3>Categorias</h3>
+            <ul>
+              <li><a href="#">Camisetas</a></li>
+              <li><a href="#">Calças</a></li>
+              <li><a href="#">Bonés</a></li>
+              <li><a href="#">Headphones</a></li>
+              <li><a href="#">Tênis</a></li>
+            </ul>
+          </div>
+        </section>
+        <section id="section3">
           <h3>Contato</h3>
-          <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p><br>
-          <span>(85) 3051-3411</span>
-        </div>
+          <div>
+            <p>
+              Av.Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+              60150-161
+            </p>
+            <br />
+            <p>(85) 3051-3411</p>
+          </div>
+        </section>
       </div>
-      <span><p>@ 2022 Digital College</p></span>
+      <span id="nameDigital"><p>@ 2022 Digital College</p></span>
     </footer>
+
+    <script src="script/form.js"></script>
   </body>
 </html>

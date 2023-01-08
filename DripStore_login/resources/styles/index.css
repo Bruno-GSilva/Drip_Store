@@ -1,5 +1,7 @@
 /* reset de pagina */
 @import url(reset.css);
+@import url(footer.css);
+@import url(main.css);
 
 body {
   height: 100%;
@@ -23,7 +25,6 @@ main {
   justify-content: center;
 }
 footer {
-  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,22 +33,7 @@ footer {
   background-color: black;
   padding: 30px;
   gap: 30px;
-}
-/* elementos filhos do main  */
-main > .images {
-  display: flex;
-  position: relative;
-  left: 20px;
-  transition: .5s;
-}
-main > .images span:first-child {
-  position: relative;
-  top: -55px;
-}
-main > .images span:last-child {
-  position: relative;
-  top: 118px;
-  right: 115px;
+  margin:auto;
 }
 /* elementos filhos do header*/
 header > div {
@@ -64,186 +50,14 @@ header > div > span:last-child h3 {
   color: #c92071;
   font-weight: 600;
 }
-/* formulario de login */
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  bottom: 40px;
-  margin: 0 auto;
-  padding: 30px 30px;
-  gap: 5px;
-  /* transition: .5s; */
-}
-label {
-  margin-top: 12px;
-  font-weight: 700;
-  font-size: 12px;
-  padding: 5px;
-}
-main > .container_login {
-  width: 583px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 1);
-  transition: 0.5s;
-}
-main > div .form_login {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 30px;
-  gap: 30px;
-}
-main > div .form_login h3 {
-  font-weight: 700;
-  font-size: 32px;
-}
-main > div .form_login span a {
-  text-decoration: underline;
-}
 
-main > div .form_links {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 40px;
-  padding: 0px;
-}
-main > div .form_links p {
-  font-size: 16px;
-  font-weight: 400;
-  padding: 0 15px;
-}
-main > div .form_links > span {
-  display: flex;
-  padding: 10px;
-  gap: 15px;
-}
-main form .text_password {
-  text-decoration: underline;
-  padding: 30px 0;
-}
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  background: #47474740;
-  border: none;
-  border-radius: 8px;
-}
-input[type="submit"] {
-  width: 100%;
-  background-color: #c92071;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-input[type="submit"]:hover {
-  background-color: #aa0052;
-}
-/* elementos filhos do footer */
-footer > div {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  /* padding: 30px; */
-  flex-wrap: wrap;
-}
-footer > div ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-footer > div > div > ul > li a {
-  position: relative;
-}
-footer > div > div > ul > li a:hover:after {
-  content: " ";
-  position: absolute;
-  background-color: #c92071;
-  left: 0;
-  box-shadow: 0 1px 12px 0 #ffffff;
-  /* opacity: .3; */
-  bottom: -10px;
-  border-radius: 3px;
-  left: 0;
-  width: 0;
-  height: 5px;
-  animation: linha 0.8s ease-in-out;
-}
-/* section01 */
-footer > div > :nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-footer > div > :nth-child(1) div {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-footer > div > :nth-child(1) div > h3 {
-  font-size: 36px;
-  font-weight: 600;
-}
-footer > div > :nth-child(1) p {
-  max-width: 210px;
-  font-size: 16px;
-  font-weight: 400;
-}
-footer > div > :nth-child(1) span {
-  display: flex;
-  gap: 25px;
-}
-/* section02 */
-footer > div > :nth-child(2) > h3 {
-  color: #ffffff;
-  padding-bottom: 30px;
-}
-footer > div > :nth-child(2) > ul > li > a {
-  font-size: 16px;
-  color: #ffffff;
-}
-/* section03 */
-footer > div > :nth-child(3) > h3 {
-  padding-bottom: 30px;
-}
-footer > div > :nth-child(3) > ul > li > a {
-  font-size: 16px;
-  color: #ffffff;
-}
-/* section04 */
-footer > div > :nth-child(4) {
-  max-width: 150px;
-}
-footer > div > :nth-child(4) > h3 {
-  padding-bottom: 30px;
-}
-/* nome da digital */
-footer > span p {
-  position: relative;
-  color: #ffffff;
-}
-footer > div::after {
-  content: " ";
-  position: absolute;
-  background-color: #ffffff;
-  opacity: 0.3;
-  bottom: -18px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-}
 /* responsivo */
 @media (max-width: 1200px) {
   main > .images {
     display: none;
+  }
+  #section1{
+    max-width: 300px;
   }
 }
 @media (max-width: 480px) {
@@ -272,6 +86,24 @@ footer > div::after {
   footer > div {
     flex-direction: column;
     gap: 30px;
+  }
+  #section1{
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+  }
+  #section3 {
+    max-width: 300px;
+  }
+  #section3 h3{
+    padding-left: 30%;
+  }
+  #section2 {
+    gap: 30px;
+  }
+  .footer{
+    justify-content: center;
+    align-items: center;
   }
 }
 @keyframes linha {

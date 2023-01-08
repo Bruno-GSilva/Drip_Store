@@ -1,0 +1,99 @@
+/* elementos filhos do main  */
+main > .images {
+    display: flex;
+    position: relative;
+    left: 20px;
+    transition: .5s;
+  }
+  main > .images span:first-child {
+    position: relative;
+    top: -55px;
+  }
+  main > .images span:last-child {
+    position: relative;
+    top: 118px;
+    right: 115px;
+  }
+/* formulario de login */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    bottom: 40px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    gap: 5px;
+    /* transition: .5s; */
+  }
+  label {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px;
+  }
+  main > .container_login {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+  }
+  main > div .form_login {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    gap: 30px;
+  }
+  main > div .form_login h3 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  main > div .form_login span a {
+    text-decoration: underline;
+  }
+  
+  main > div .form_links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    padding: 0px;
+  }
+  main > div .form_links p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 15px;
+  }
+  main > div .form_links > span {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+  }
+  main form .text_password {
+    text-decoration: underline;
+    padding: 30px 0;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    background: #47474740;
+    border: none;
+    border-radius: 8px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #c92071;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #aa0052;
+  }
+    

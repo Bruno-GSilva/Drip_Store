@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-        
-      <h1>Selecione o index da pagina</h1>
-
-      <section>
-        
-        <div class="btn"><a href="DripStore_login/index.html">Login</a></div>
-        
-        <div class="btn"></div>
-        
-        <div class="btn"></div>
-        
-        <div class="btn"></div>
-      
-    </section>
+    <div class="card">
+      <h1>se voce nao tiver cadastro basta clicar<a href="DripStore_login/index.html"> aqui</a></h1>
+      <form id="form">
+        <h3>faca seu login</h3>
+        <label for="login">login</label>
+        <input type="text" id="login" required>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" required>
+        <button>enviar</button>
+      </form>
     </div>
+    <script>
+      let login = document.getElementById("login")
+      let password = document.getElementById("password")
+      let form = document.getElementById("form")
+      let acess = ["adm"]
+      form.addEventListener("submit", (event) =>{
+        event.preventDefault()
+        login.value && password.value == acess[0]? [console.log("acesso permitido"), window.open(URL,"http://127.0.0.1:5500/DripStore_login/index.html")]:console.log("acesso negado")
+      })
+    </script>
   </body>
 </html>

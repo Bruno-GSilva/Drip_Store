@@ -26,7 +26,7 @@
       let acess = ["adm"]
       form.addEventListener("submit", (event) =>{
         event.preventDefault()
-        login.value && password.value == acess[0]? [console.log("acesso permitido"), window.open(URL,"http://127.0.0.1:5500/DripStore_login/index.html")]:console.log("acesso negado")
+        login.value && password.value == acess[0]? [console.log("acesso permitido"), window.open("DripStore_login/index.html")]:console.log("acesso negado")
       })
     </script>
   </body>
